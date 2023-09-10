@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="#ct">WHAT WE DO</a></li>
+                        <li><a href="contactusphp.php">CONTACT</a></li>
+                        <li><a href="signup1.php">LOGIN/SIGN UP</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>CARE FOR NEEDS</h1><br>
+                <p>Helping one person might not change the whole world,but it could change the world for one person.<br>Helping others is the greatest quality of a human being.There are several ways and numerous styles to aid people who are in need of help.<br><br><q>It costs nothing but the person who receives it, gets everything.</q></p><br><br>
+                
+                <a href="signup1.php" class="btn">Become a Volunteer</a>
+                
+            </div>
+        </section>
+        <!------Workk-Sections----->
+        <section class="work-section">
+            <h1 id="ct">What We Do</h1>
+    <div class="container" id="ctr">
+        <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/food.jpg">
+                    <h3>FOOD</h3>
+                </div>
+            </div>
+            <div class="work work2" onclick="hide()"><!------face face2----work work2------>
+                <div class="content">
+                    <p>There are people in the world so hungry, that God cannot appear to them except in the form of bread.</p>
+                </div>
+            </div>
+        </div>  
+                <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/old-age.jpg">
+                    <h3>oldage</h3>
+                </div>
+            </div>
+            <div class="work work2"><!------face face2----work work2------>
+                <div class="content">
+                    <p>Love and respect old age people because you are 'Aging' too..</p>
+                        
+                </div>
+            </div>
+        </div>
+                <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/women.jpg">
+                    <h3>women empowerment</h3>
+                </div>
+            </div>
+            <div class="work work2"><!------face face2----work work2------>
+                <div class="content">
+                    <p>Feminism isn't about making women stronger. Women are already strong, it's about changing the way the world perceives that strength.</p>
+                        
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <div class="container" id="ctr">
+        <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/education.jpg">
+                    <h3>Education</h3>
+                </div>
+            </div>
+            <div class="work work2"><!------face face2----work work2------>
+                <div class="content">
+                    <p>Education is the most powerful weapon which you can use to change the world.</p>
+                </div>
+            </div>
+        </div>  
+                <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/medical.jpg">
+                    <h3>medical help</h3>
+                </div>
+            </div>
+            <div class="work work2"><!------face face2----work work2------>
+                <div class="content">
+                    <p>We need a cost-effective, high-quality health care system, guaranteeing health care to all of our people as a right.</p>
+                        
+                </div>
+            </div>
+        </div>
+                <div class="row"> <!------card --- row-------->
+            <div class="work work1"><!------face face1----work work1------>
+                <div class="content">
+                    <img src="images/forestation.jpg">
+                    <h3>Deforestration</h3>
+                </div>
+            </div>
+            <div class="work work2"><!------face face2----work work2------>
+                <div class="content">
+                    <p>A nation that destroys its soils destroys itself. Forests are the lungs of our land, purifying the air and giving fresh strength to our people. </p>
+                        
+                </div>
+            </div>
+        </div>
+                        
+    </div>
+   </section>
+        <!-----javascript to toggle menu on smaller device like mobiles---->
+        <script>
+            var navlinks=document.getElementById("nav-links");
+            function showMenu()
+            {
+                navlinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

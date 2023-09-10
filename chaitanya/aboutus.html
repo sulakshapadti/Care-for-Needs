@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.column {
+  
+  width:20%;
+    margin-left: 5%;
+  margin-bottom: 16px;
+  padding: 50px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+
+
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.infoofus {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  margin: 30px;
+  padding: 20px; 
+}
+.container {
+  padding: 0 16px;
+    
+  
+}
+.about-section {
+  padding: 50px;
+  font-family: 'Brush Script MT', cursive;
+  color: white;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>        
+        <section class="header">
+
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="nav-links">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="contactusphp.php">CONTACT</a></li>
+                        <li><a href="signup1.php">LOGIN/SIGN UP</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+<div class="about-section">
+  
+  <div class="infoofus">
+<h2><center>HOW WE STARTED</center></h2>
+<p ><center>HEY guys !!!!
+<br> few months ago we were working for an NGO named AWO , it had good amount of volunteers in the begin , due to pandemic many 
+left banglore and unfortunitly good amount of volunteers and there families too suffered from covid it 
+resulted in rapid decrease in number volunteers we had and in usual days , we as an NGO used to go 
+to colleges or do some public activities to gather people for volunteering but pandemic made it 
+impossible ,usually we used to recieve a request for a help through some random contacts or through 
+some forwarded what'sapp messeges we had no particular way , once we receive requiest first step was 
+to confirm person's identity by calling and verify adhar number , area etc then that information 
+was passed to managers , there he os she will assign that case to particular category , these all things 
+consumed lot of time and caused many problems 
+so we three thought of developing a web based project which helps NGO's who faced these problems </center>
+<br>* care for needs is a NGO based project , this web application provides site for the NGO's to find 
+civil workers 
+<br>*through care for need any civilian can register as an volunteer to work for a purticular field
+<br>* instrested field  can be choosen by civilian while registering for volunteering 
+<br>* volunteer will collect the necessity of the people and provide it to a NGO
+<br>* chaitanya is name of our NGO , which has different fields of work like education , health , help for
+orphan , old age home , women empowerment , to find scribe for blind and it helps to discribute food too 
+through volunteeres 
+<br>* chaitanya provides facilties for the people who needs help 
+<br>*what we basically do is we gather volunteers through this website and connect then to a NGO , and we 
+also collects information of people needs help and it will assinged to a particular group of field 
+</p>
+</div> 
+
+</div>
+        </section>
+
+<center><h1>"Meet The Team" </h1></center>
+
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+     <center>      <center> <img src="img/teju1.jpeg" alt="Tejaswini A" style="width:50%"></center>
+</center>
+      <div class="container">
+       <center> <h2>Thejaswini</h2>
+        <p class="title">Team member</p>
+        <p>Works for Deforestration and Health team.</p>
+        <p>Tejaswini@Gmail.com</p></center>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+<center> <img src="img/sul.jpeg" alt="Sulaksha" style="width:50%;"></center> 
+           
+
+       <div class="container">
+      <center> <h2>Sulaksha </h2>
+        <p class="title">Team member</p>
+        <p>Works in Health and Education team.</p>
+        <p>Sulaksha@Gmail.com</p></center>
+        
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <center><img src="img/VV.png" alt="Vaibhavi B" style="width:50%"></center>
+      <div class="container">
+        <center><h2>Vaibhavi B</h2>
+        <p class="title">Team member</p>
+        <p>Works in Education and women empowerment team.</p>
+        <p>vaibhavi@Gmail.com</p></center>
+        
+      </div>
+    </div>
+  </div> 
+</div>
+        <script>
+            var navlinks=document.getElementById("nav-links");
+            function showMenu()
+            {
+                navlinks.style.right = "0";
+            }
+            function hideMenu()
+            {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+
+</body>
+</html>
